@@ -42,5 +42,10 @@ public class StudentController {
 	public String update(@PathVariable int a,@RequestBody Student s) {
 		return ss.update(a,s);
 	}
+	
+	@GetMapping(value="/one")
+	public String getOne() {
+		return "hello";
+	}
 
 }
